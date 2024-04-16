@@ -1,10 +1,11 @@
 import unittest
 
 def factorial(n):
-    if n == 1:
+    if n == 0 or n == 1:
         return 1
     resultado = n * factorial(n-1)
     return resultado
+
 
 class TestFactorial(unittest.TestCase):
     def test_con_1(self):
